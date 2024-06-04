@@ -22,12 +22,11 @@ To import the dataset from the CSV file and store it in a variable df
 ## Data Wrangling
 df.shape
 (88889, 31)
+
 The dataset has 88,889 records and 31 columns.
 
-
-
 ### Relevant Features
-- **EventId**: Unique identifier for each accident.
+- **RegistrationNumber**: Unique identifier for each airplane.
 - **EventDate**: Date of the accident.
 - **AircraftDamage**: Description of aircraft damage (e.g., Substantial, Minor).
 - **AircraftCategory**: Category of aircraft involved.
@@ -39,5 +38,34 @@ The dataset has 88,889 records and 31 columns.
 - **WeatherCondition**: Weather condition at the time of the accident (e.g., VMC, IMC).
 - **BroadPhaseOfFlight**: Broad phase of flight (e.g., Takeoff, Landing).
 - **ReportStatus**: Status of the report (e.g., Factual, Probable Cause).
+)
+# Summary of cleaned dataframe
+df.info()
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 88889 entries, 0 to 88888
+Data columns (total 13 columns):
+ #   Column                 Non-Null Count  Dtype  
+---  ------                 --------------  -----  
+ 0   Event.Id               88889 non-null  object 
+ 1   Event.Date             88889 non-null  object 
+ 2   Aircraft.damage        88889 non-null  object 
+ 3   Aircraft.Category      88889 non-null  object 
+ 4   Registration.Number    88889 non-null  object 
+ 5   Make                   88889 non-null  object 
+ 6   Model                  88889 non-null  object 
+ 7   Number.of.Engines      88889 non-null  float64
+ 8   Engine.Type            88889 non-null  object 
+ 9   Purpose.of.flight      88889 non-null  object 
+ 10  Weather.Condition      88889 non-null  object 
+ 11  Broad.phase.of.flight  88889 non-null  object 
+ 12  Report.Status          88889 non-null  object 
+
+# Initial Exploratory Data Analysis
+
+Initial Exploratory Data Analysis
+# Distribution of aircraft damage
+sns.countplot(data=df, x='Aircraft.damage')
+plt.title('Distribution of Aircraft Damage')
+plt.show()
 
 
