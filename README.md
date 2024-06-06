@@ -13,10 +13,13 @@ Which Aircraft to be used for commercial enterprise and which to be used for pri
 ### Dataset Overview
 The dataset used in this project is sourced from Kaggle, provided by the National Transportation Safety Board (NTSB). It contains aviation accident data spanning from 1962 to 2023.
 ### Data & Libraries Importation
+'''
 import pandas as pd
 import matplotlib.pyplot as plt
 %matplotlib inline
 import numpy as np
+'''
+
 ## Loading the data
 To import the dataset from the CSV file and store it in a variable df
 ## Data Wrangling
@@ -40,7 +43,7 @@ The dataset has 88,889 records and 31 columns.
 - **ReportStatus**: Status of the report (e.g., Factual, Probable Cause).
 )
 # Summary of cleaned dataframe
-df.info()
+> df.info()
 <class 'pandas.core.frame.DataFrame'>
 RangeIndex: 88889 entries, 0 to 88888
 Data columns (total 13 columns):
@@ -64,8 +67,10 @@ Data columns (total 13 columns):
 
 Initial Exploratory Data Analysis
 # Distribution of aircraft damage
+'''
 sns.countplot(data=df, x='Aircraft.damage')
 plt.title('Distribution of Aircraft Damage')
 plt.show()
+'''
 
 
