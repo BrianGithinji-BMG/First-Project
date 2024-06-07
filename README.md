@@ -340,32 +340,6 @@ print("\nTop 10 Helicopter Models with Highest Uninjured Outcomes")
 print(top_helicopters)
 ```
 
-**Top 10 Airplane Models with Highest Uninjured Outcomes**
-     Aircraft.Category    Make    Model  Total.Uninjured
-- 998           Airplane  Boeing      737       4404.00000
-- 1070          Airplane  Boeing      767       2372.32544
-- 1054          Airplane  Boeing      757       2052.00000
-- 1088          Airplane  Boeing      777       1757.00000
-- 1005          Airplane  Boeing  737 7H4       1704.00000
-- 1029          Airplane  Boeing  737-7H4       1587.00000
-- 263           Airplane  Airbus     A320       1531.00000
-- 1094          Airplane  Boeing  777-222       1271.00000
-- 1043          Airplane  Boeing      747       1199.00000
-- 270           Airplane  Airbus     A321       1073.00000
-
-**Top 10 Helicopter Models with Highest Uninjured Outcomes**
-     Aircraft.Category                         Make     Model  Total.Uninjured
-- 6876        Helicopter                         Bell      206B       188.278077
-- 7375        Helicopter  Robinson Helicopter Company    R44 Ii       176.325440
-- 7355        Helicopter                     Robinson       R44       120.650879
-- 7363        Helicopter          Robinson Helicopter  R22 Beta       116.325440
-- 7348        Helicopter                     Robinson       R22       107.301758
-- 6859        Helicopter                         Bell       206        90.000000
-- 6898        Helicopter                         Bell       407        89.000000
-- 7406        Helicopter                    Schweizer      269C        88.650879
-- 7365        Helicopter          Robinson Helicopter       R44        85.000000
-- 7350        Helicopter                     Robinson  R22 Beta        73.325440
-
 
 ![download](https://github.com/BrianGithinji-BMG/First-Project/assets/133196863/f587fff7-18fa-47e5-981c-fd8ace3d60f1)
 
