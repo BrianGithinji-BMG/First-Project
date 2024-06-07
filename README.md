@@ -3,10 +3,10 @@ In this project, we aim to provide actionable insights for a business stakeholde
 # BUSINESS PROBLEM ;
 As part of its diversification strategy, the company is exploring new industries to expand its portfolio. Currently, the focus is on entering the aviation industry, specifically in purchasing and operating aircraft for both commercial and private enterprises. The critical business problem is to identify the aircraft that pose the lowest risk, enabling the company to make informed decisions in this new market segment.
 ## Main Objective
-Which aircraft present the lowest risk for purchase and operation, thereby supporting the company's strategic diversification efforts?
+Which aircraft presents the lowest risk for purchase and operation, thereby supporting the company's strategic diversification efforts?
 
 ## Specific Objectives
-Which Aircraft Category , makes and models is less vulnerable to accidents?
+Which Aircraft Category, makes and models is less vulnerable to accidents?
 Which Aircraft to be used for commercial enterprise and which to be used for private enterprises?
 # Data Understanding
 
@@ -33,12 +33,11 @@ df.head()
 df_code = pd.read_csv('Aviation Data/USState_Codes.csv')
 df_code.head()
 ```
-5.0#00000	699.000000`2022.000`000	3.000000
 ## Data Wrangling
 >df.shape
 (88889, 31)
 
-The da
+
 This are the columns in our dataset:
 >'Event.Id', 'Investigation.Type', 'Accident.Number', 'Event.Date',
        'Location', 'Country', 'Latitude', 'Longitude', 'Airport.Code',
@@ -48,14 +47,15 @@ This are the columns in our dataset:
        'Schedule', 'Purpose.of.flight', 'Air.carrier', 'Total.Fatal.Injuries',
        'Total.Serious.Injuries', 'Total.Minor.Injuries', 'Total.Uninjured',
        'Weather.Condition', 'Broad.phase.of.flight', 'Report.Status',
-       'Publication.Date',taset has 88,889 record and columns to use.
-- **Event.id**: Unique identifier for each event.s and 31 columns.
+       'Publication.Date'
+>The Dataset has 88,889 record and 31 columns.
 
 ### Relevant Features
-- **RegistrationNumber
+- **Event.id**: Unique identifier for each event.
+- **RegistrationNumber**: Unique identifier for each airplane.
 - **Location**: Unique identifier of a place.
 - **Country**: Shows the nations.(e.g., United States)**: Unique identifier for each airplane
-- **Injury.Severity**: To determine the severity of the accident.(e.g., Incident,Fatal).
+- **Injury.Severity**: To determine the severity of the accident. (e.g., Incident, Fatal).
 - **EventDate**: Date of the accident.
 - **Aircraft.Damage**: Description of aircraft damage (e.g., Substantial, Minor).
 - **AircraftCategory**: Category of aircraft involved.
@@ -69,7 +69,9 @@ This are the columns in our dataset:
 - **Total.Minor.Injuries**: N.o of Injuries that are minor.
 - **Total.Uninjured**: N.o of uninjured people.the flight (e.g., Personal, Commercial).
 - **WeatherCondition**: Weather condition at the time of the accident (e.g., VMC, IMC).
-- **BroadPhaseOfFlight**: Broad ph .# 2. DATA CLEANING
+- **BroadPhaseOfFlight**: Broad phase of flight whether landing, takeoff,taxi e,t,c .
+
+# 2. DATA CLEANING
 As seen above the following feaures are of importance and therefore the rest of the columns that are in our dataset are irrelevant hence need to be dropped.
 >Dropping of unnecessary columns for our analysis
 ```
@@ -93,7 +95,7 @@ Data columns (total 19 columns):
 - 7   Registration.Number     87507 non-null  object 
 - 8   Make                    88826 non-null  object 
 - 9   Model                   88797 non-null  object 
-- 10  Number.of.Engines       82805 non-null  float64
+- 10  Number. of.Engines       82805 non-null  float64
 - 11  Engine.Type             81793 non-null  object 
 - 12  Purpose.of.flight       82697 non-null  object 
 - 13  Total.Fatal.Injuries    77488 non-null  float64
@@ -170,5 +172,7 @@ dtypes: float64(5), int32(2), object(14)
 ## 4.1 Univariate Analysis
 ### : Distribution of Aircraft Damage
 Understanding the distribution of aircraft damage helps to identify the most common types of damage and potential risk areas.
+
+![Distribution of Aircraft Damage](https://github.com/BrianGithinji-BMG/First-Project/assets/133196863/2679098b-f8d9-460f-bd01-cf0407812d0e)
 
 
