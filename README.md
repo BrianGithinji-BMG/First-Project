@@ -201,28 +201,28 @@ pivot_accidents_make_type = pivot_accidents_make_type.sort_values(by='Total', as
 
 print(pivot_accidents_make_type.head(20))
 ```
-Aircraft.Type                Commercial  Private  Unknown  Total
-Make                                                            
-Cessna                             7280        0      445   7725
-Piper                              4152        0      184   4336
-Beech                              1414        0      114   1528
-Bell                                413      147      115    675
-Boeing                              139        1      318    458
-Mooney                              391        0        2    393
-Robinson                            217       98        8    323
-Bellanca                            272        0        8    280
-Grumman                             205        0       31    236
-Aeronca                             226        0        2    228
-Maule                               223        0        2    225
-Robinson Helicopter                 160       63        2    225
-Hughes                              121       71       27    219
-Air Tractor Inc                     212        0        6    218
-Cirrus Design Corp                  200        0        3    203
-Air Tractor                         181        0        8    189
-Robinson Helicopter Company          87       86        4    177
-Champion                            162        0        3    165
-Luscombe                            162        0        1    163
-Stinson                             145        0        1    146
+# Aircraft.Type                Commercial  Private  Unknown  Total
+## Make                                                            
+- Cessna                             7280        0      445   7725
+- Piper                              4152        0      184   4336
+- Beech                              1414        0      114   1528
+- Bell                                413      147      115    675
+- Boeing                              139        1      318    458
+- Mooney                              391        0        2    393
+- Robinson                            217       98        8    323
+- Bellanca                            272        0        8    280
+- Grumman                             205        0       31    236
+- Aeronca                             226        0        2    228
+- Maule                               223        0        2    225
+- Robinson Helicopter                 160       63        2    225
+- Hughes                              121       71       27    219
+- Air Tractor Inc                     212        0        6    218
+- Cirrus Design Corp                  200        0        3    203
+- Air Tractor                         181        0        8    189
+- Robinson Helicopter Company          87       86        4    177
+- Champion                            162        0        3    165
+- Luscombe                            162        0        1    163
+- Stinson                             145        0        1    146
 ## Filtering Data to work with airplanes and helicopters.
 ```
 # Load the cleaned dataset
@@ -262,7 +262,7 @@ Weather conditions can significantly impact the likelihood of accidents. This an
 ![download](https://github.com/BrianGithinji-BMG/First-Project/assets/133196863/6f711bf9-d1c6-4326-a1f3-8346dd9c0270)
 
 ### Interpratation:
-- Accidents occur during VMC weather conditions and when they do, the 
+- Accidents occur during *VMC* weather conditions and when they do, the 
   damage is critical hence it's better to take flights during IMC weather 
   conditions
   
@@ -272,8 +272,8 @@ Weather conditions can significantly impact the likelihood of accidents. This an
 
 
 ### Interpretation:
-- Airplanes and helicopters that are said to be of model 172 , 152 and 
-  172N poses much risk in the aviation industry
+- Airplanes and helicopters that are said to be of model **172** , **152** and 
+  **172N** poses much risk in the aviation industry
 
 # 4.3 MULTIVARIATE ANALYSIS
 Analysis for airplane and helicopter types and the severity of injuries they bring.
@@ -281,8 +281,8 @@ Analysis for airplane and helicopter types and the severity of injuries they bri
 ![download](https://github.com/BrianGithinji-BMG/First-Project/assets/133196863/f0537c23-4cdb-4860-83b4-430e10cb6327)
 
 ### Interpretation
-- It seems that Boeing seems to have less fatal injuries and has most numbers of uninjured people during accidents hence can be considered as a less risky airplane.
-- On the other hand Cessna seems to have more fatalities and can be considered as a risky airplane.
+- It seems that **Boeing** seems to have less fatal injuries and has most numbers of uninjured people during accidents hence can be considered as a **less risky airplane**.
+- On the other hand **Cessna** seems to have more fatalities and can be considered as a **risky airplane**.
 
 - To ascertain our interpretation we can create boxplots for aircrafts damage by make and major on minor and uninjured injuries/
 ```
@@ -308,7 +308,7 @@ plt.show()
 
 
 ### Interpretation:
-It can be seen that airplanes and helicopters made by Boeing and Bell are less risky since they seem to pose less severe injuries
+It can be seen that *airplanes* and *helicopters* made by **Boeing** and **Bell** are less risky since they seem to pose less severe injuries
 
 # CONCLUSION BY VISUALS
 We shall use injury severity to show that our filtered aircrafts i.e airplane and helicopters have more uninjured incidents and less fatal incidents hence more safer aircraft.
@@ -342,29 +342,29 @@ print(top_helicopters)
 
 **Top 10 Airplane Models with Highest Uninjured Outcomes**
      Aircraft.Category    Make    Model  Total.Uninjured
-998           Airplane  Boeing      737       4404.00000
-1070          Airplane  Boeing      767       2372.32544
-1054          Airplane  Boeing      757       2052.00000
-1088          Airplane  Boeing      777       1757.00000
-1005          Airplane  Boeing  737 7H4       1704.00000
-1029          Airplane  Boeing  737-7H4       1587.00000
-263           Airplane  Airbus     A320       1531.00000
-1094          Airplane  Boeing  777-222       1271.00000
-1043          Airplane  Boeing      747       1199.00000
-270           Airplane  Airbus     A321       1073.00000
+- 998           Airplane  Boeing      737       4404.00000
+- 1070          Airplane  Boeing      767       2372.32544
+- 1054          Airplane  Boeing      757       2052.00000
+- 1088          Airplane  Boeing      777       1757.00000
+- 1005          Airplane  Boeing  737 7H4       1704.00000
+- 1029          Airplane  Boeing  737-7H4       1587.00000
+- 263           Airplane  Airbus     A320       1531.00000
+- 1094          Airplane  Boeing  777-222       1271.00000
+- 1043          Airplane  Boeing      747       1199.00000
+- 270           Airplane  Airbus     A321       1073.00000
 
 **Top 10 Helicopter Models with Highest Uninjured Outcomes**
      Aircraft.Category                         Make     Model  Total.Uninjured
-6876        Helicopter                         Bell      206B       188.278077
-7375        Helicopter  Robinson Helicopter Company    R44 Ii       176.325440
-7355        Helicopter                     Robinson       R44       120.650879
-7363        Helicopter          Robinson Helicopter  R22 Beta       116.325440
-7348        Helicopter                     Robinson       R22       107.301758
-6859        Helicopter                         Bell       206        90.000000
-6898        Helicopter                         Bell       407        89.000000
-7406        Helicopter                    Schweizer      269C        88.650879
-7365        Helicopter          Robinson Helicopter       R44        85.000000
-7350        Helicopter                     Robinson  R22 Beta        73.325440
+- 6876        Helicopter                         Bell      206B       188.278077
+- 7375        Helicopter  Robinson Helicopter Company    R44 Ii       176.325440
+- 7355        Helicopter                     Robinson       R44       120.650879
+- 7363        Helicopter          Robinson Helicopter  R22 Beta       116.325440
+- 7348        Helicopter                     Robinson       R22       107.301758
+- 6859        Helicopter                         Bell       206        90.000000
+- 6898        Helicopter                         Bell       407        89.000000
+- 7406        Helicopter                    Schweizer      269C        88.650879
+- 7365        Helicopter          Robinson Helicopter       R44        85.000000
+- 7350        Helicopter                     Robinson  R22 Beta        73.325440
 
 
 ![download](https://github.com/BrianGithinji-BMG/First-Project/assets/133196863/f587fff7-18fa-47e5-981c-fd8ace3d60f1)
