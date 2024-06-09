@@ -408,4 +408,4 @@ The analysis of the aviation dataset has led to several key insights regarding t
 
 This analysis highlights the importance of leveraging data to make informed decisions in the aviation industry. By focusing on the models with the highest uninjured outcomes and adhering to best safety practices, the company can mitigate risks and ensure a successful business venture in aviation. Continuously challenging and reviewing the solutions will help in refining the approach and ensuring robust decision-making.
 
-
+[Tableau Dashboard](https://public.tableau.com/app/profile/brian.githinji/viz/AviationData_17178942883090/AviationProject?publish=yes)
